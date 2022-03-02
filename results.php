@@ -1,7 +1,7 @@
 <?php
 
 $errors = [];
-$postdata = [];
+$data = [];
 
 if (empty($_POST['name'])) {
     $errors['name'] = 'Name is required.';
@@ -9,6 +9,18 @@ if (empty($_POST['name'])) {
 
 if (empty($_POST['email'])) {
     $errors['email'] = 'Email is required.';
+}
+
+if (empty($_POST['phone'])) {
+    $errors['phone'] = 'Phone Number is required.';
+}
+
+if (empty($_POST['subject'])) {
+    $errors['subject'] = 'Subject is required.';
+}
+
+if (empty($_POST['message'])) {
+    $errors['message'] = 'Message is required.';
 }
 
 if (!empty($errors)) {
@@ -19,4 +31,4 @@ if (!empty($errors)) {
     $data['message'] = 'Success!';
 }
 
-echo json_encode($postdata);
+echo json_encode($data);
