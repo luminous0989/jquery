@@ -3,6 +3,12 @@
 $errors = [];
 $data = [];
 
+$name = $_POST['name']; 
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
 if (empty($_POST['name'])) {
     $errors['name'] = 'Name is required.';
 }
@@ -29,7 +35,6 @@ if (!empty($errors)) {
 } else {
     $data['success'] = true;
     $data['message'] = 'Data has been uploaded!';
-    print_r($_POST);
 }
 
 echo json_encode($data);

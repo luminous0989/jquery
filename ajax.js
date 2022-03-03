@@ -1,20 +1,20 @@
 $(document).ready(function() {		 
-    $("#submit_btn").click(function(ev) {
+    $("formId").submit(function(ev) {
 
         // fetch form data
-        var form_data = {
-            'user_name'		: $("#name").val(), 
-            'user_email'	: $("#email").val(),  
-            'phone_number'	: $("#phone").val(), 
-            'subject'		: $("#subject").val(), 
-            'msg'			: $("#message").val()
+        var formData = {
+            name        :$("#name").val(), 
+            email       :$("#email").val(),  
+            phone       :$("#phone").val(), 
+            subject     :$("#subject").val(), 
+            message     :$("#message").val()
         };
 
         //process form using ajax
         $.ajax({
             url: "process.php",
             type: "POST",
-            data: form_data,
+            data: formData,
             dataType: "json",
             encode: true,
         }).done(function (data) {

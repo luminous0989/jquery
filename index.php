@@ -15,7 +15,7 @@
 <div class="form-style-heading">Dont see anything you like? Please Contact Us!</div>
     <div id="contact_results"></div>
     <div id="contact_body">
-    <form id='formId' method="POST" action='results.php'>
+    <form id='formId' method="POST" action='process.php'>
         <label for="name"><span>Name: <span class="required">*</span></span>
             <input type="text" name="name" id="name" required="true" class="input-field" autocomplete="off"/>
             </label> <br>
