@@ -28,7 +28,7 @@ if (!empty($errors)) {
     $data['errors'] = $errors;
 } else {
     $data['success'] = true;
-    $data['message'] = 'Success!';
+    $data['message'] = 'Data has been uploaded!';
 }
 
 echo json_encode($data);
