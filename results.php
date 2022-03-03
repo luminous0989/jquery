@@ -29,6 +29,7 @@ if (!empty($errors)) {
 } else {
     $data['success'] = true;
     $data['message'] = 'Data has been uploaded!';
+    print_r($_POST);
 }
 
 echo json_encode($data);

@@ -14,7 +14,7 @@ $(document).ready(function() {
         $.ajax({
             url: "process.php",
             type: "POST",
-            data: formData,
+            data: form_data,
             dataType: "json",
             encode: true,
         }).done(function (data) {
