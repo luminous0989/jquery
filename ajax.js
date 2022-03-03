@@ -1,6 +1,5 @@
 $(document).ready(function() {		 
     $("formId").submit(function(ev) {
-
         // fetch form data
         var formData = {
             name        :$("#name").val(), 

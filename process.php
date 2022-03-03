@@ -35,6 +35,7 @@ if (!empty($errors)) {
 } else {
     $data['success'] = true;
     $data['message'] = 'Data has been uploaded!';
+    echo "test $name $email $phone $message $subject";
 }
 
 echo json_encode($data);
