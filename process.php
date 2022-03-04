@@ -1,3 +1,5 @@
+<link href="style.css" rel="stylesheet" type="text/css" />
+<div class="form-style" id="contact-form">
 <?php
 
 $errors = [];
@@ -35,7 +37,9 @@ if (!empty($errors)) {
 } else {
     $data['success'] = true;
     $data['message'] = 'Data has been uploaded!';
-    echo "test $name $email $phone $message $subject";
+    echo "test <br> $name <br> $email <br> $phone <br> $message <br> $subject <br>";
 }
 
 echo json_encode($data);
+?>
+</div>

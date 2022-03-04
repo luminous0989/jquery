@@ -20,7 +20,7 @@
             <input type="text" name="name" id="name" required="true" class="input-field" autocomplete="off"/>
             </label> <br>
         <label for="email"><span>Email: <span class="required">*</span></span>
-            <input type="email" name="email" required="true" class="input-field"/>
+            <input type="email" name="email" required="true"  class="input-field"/>
             </label> <br>
         <label for="phone"><span>Phone:</span>
             <input type="text" name="phone" maxlength="15" placeholder="+63" required="true" class="tel-number-field long" />
